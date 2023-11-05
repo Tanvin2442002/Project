@@ -1,0 +1,84 @@
+#nav{
+    -fx-background-color: #333333;
+    -fx-text-fill: white;
+}
+#grid
+{
+    -fx-background-color: linear-gradient(from 0% 0% to 25% 120%, #000000, #a9a9a9);
+}
+#btn {
+    -fx-background-color: Ash; /* Default background color */
+    -fx-padding: 10px 20px; /* Padding for the button */
+    -fx-text-fill: white; /* Text color */
+    -fx-font-size: 14px; /* Font size */
+    -fx-background-radius: 5px; /* Rounded corners */
+    -fx-border-radius: 5px;
+}
+.pending_course{
+    -fx-background-color: #E9C99B;
+}
+.pending_course:hover{
+    -fx-background-color: #f1ac4a;
+    -fx-scale-x: 1.06;
+    -fx-scale-y: 1.06;
+}
+.completed{
+    -fx-background-color: #9CE99B;
+}
+.completed:hover{
+    -fx-background-color: #4eb74c;
+    -fx-scale-x: 1.06;
+    -fx-scale-y: 1.06;
+    /*-fx-effect: Glow(0.5,#4EB74CFF);*/
+}
+.watch_time{
+    -fx-background-color:  #9BDEE9;
+}
+.watch_time:hover{
+    -fx-background-color: #378c98;
+    -fx-scale-x: 1.06;
+    -fx-scale-y: 1.06;
+}
+.certificate{
+  -fx-background-color:   #F2B3F5;
+}
+.certificate:hover{
+    -fx-background-color: #c551cb;
+    -fx-scale-x: 1.06;
+    -fx-scale-y: 1.06;
+}
+
+.standing{
+    -fx-background-color:  #BCB3F5;
+}
+.standing:hover{
+    -fx-background-color: #7165c0;
+    -fx-scale-x: 1.06;
+    -fx-scale-y: 1.06;
+}
+.logout{
+    -fx-background-color: transparent;
+}
+.logout:hover{
+    -fx-background-color: #ce6048;
+}
+.logout:pressed{
+    -fx-background-color: transparent;
+    -fx-scale-x: 1.06;
+    -fx-scale-y: 1.06;
+}
+.menu{
+    -fx-background-color:  #404A4D;
+}
+.menu:hover{
+    -fx-border-width: 2 2 2 2;
+    -fx-border-color:  #86D3E3;
+    -fx-scale-x: 1.06;
+    -fx-scale-y: 1.06;
+
+}
+.study{
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 0%, repeat, #8c52ff, #5ce0e6);
+}
+
+

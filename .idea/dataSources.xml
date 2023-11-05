@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="@dproject.database.windows.net" uuid="20126ac0-ae75-4966-bf18-51d46f045e34">
+      <driver-ref>sqlserver.ms</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
+      <jdbc-url>jdbc:sqlserver://dproject.database.windows.net:1433;encrypt=true;trustServerCertificate=false;loginTimeout=30;</jdbc-url>
+      <jdbc-additional-properties>
+        <property name="AZURE_SQL_DB_SERVER" value="/subscriptions/8d57d0dd-c59e-4774-8a00-0a22dc65e793/resourceGroups/sqldata/providers/Microsoft.Sql/servers/dproject" />
+      </jdbc-additional-properties>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="@clubcognita.database.windows.net" uuid="dbe6a3ec-b86e-462b-952a-67378eb85f31">
+      <driver-ref>sqlserver.ms</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
+      <jdbc-url>jdbc:sqlserver://clubcognita.database.windows.net:1433;encrypt=true;trustServerCertificate=false;loginTimeout=30;</jdbc-url>
+      <jdbc-additional-properties>
+        <property name="AZURE_SQL_DB_SERVER" value="/subscriptions/8d57d0dd-c59e-4774-8a00-0a22dc65e793/resourceGroups/Tamal/providers/Microsoft.Sql/servers/clubcognita" />
+      </jdbc-additional-properties>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="lattice@localhost" uuid="4c3b9f54-55bc-465d-a9c0-c2e6e564dbf7">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/lattice</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+  </component>
+</project>

@@ -1,0 +1,16 @@
+.back{
+
+    -fx-background-image: url(login.jpg);
+    -fx-background-size: contain;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 100% 100%;
+}
+.leftside{
+
+    -fx-background-image: url(leftlogin.gif);
+    -fx-background-size: contain;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 100% 100%;
+}

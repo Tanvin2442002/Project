@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>-->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="screenSize" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1200.0" style="-fx-background-color: #FFFFFF;" styleClass="back" stylesheets="@image.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.login.LogIn_SignUp_Pass.loginController">
+   <children>
+      <AnchorPane layoutY="-2.0" prefHeight="652.0" prefWidth="398.0" AnchorPane.bottomAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="226.0" prefWidth="398.0" styleClass="leftside" stylesheets="@image.css" />
+            <VBox alignment="CENTER" layoutX="49.0" layoutY="308.0" prefHeight="302.0" prefWidth="300.0">
+               <children>
+                  <VBox prefHeight="75.0" prefWidth="300.0">
+                     <children>
+                        <Label style="-fx-alignment: left;" text="Username" textFill="#9ad0d3">
+                           <font>
+                              <Font name="Cambria Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="usname" prefHeight="40.0" prefWidth="300.0" promptText="Username or Student ID" style="-fx-background-color: #e9deff;">
+                           <font>
+                              <Font name="Cambria" size="14.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="75.0" prefWidth="300.0">
+                     <children>
+                        <Label text="Password" textFill="#9ad0d3">
+                           <font>
+                              <Font name="Cambria Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <PasswordField fx:id="uspasswd" prefHeight="40.0" prefWidth="300.0" promptText="Password" style="-fx-background-color: #e9deff;">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </PasswordField>
+                     </children>
+                  </VBox>
+                  <Label fx:id="showMsg" prefHeight="35.0" prefWidth="300.0" style="-fx-alignment: center;" textFill="#ee601e">
+                     <font>
+                        <Font name="Cambria" size="14.0" />
+                     </font>
+                  </Label>
+                  <Button id="shiny_r" mnemonicParsing="false" onMouseClicked="#login" prefHeight="26.0" prefWidth="87.0" style="-fx-background-color: #8D6AED; -fx-background-radius: 5;" stylesheets="@../CSS/button.css" text="Log In">
+                     <font>
+                        <Font name="Cambria" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="forgotPass" mnemonicParsing="false" onMouseClicked="#ForgotPassButton" prefHeight="40.0" prefWidth="187.0" style="-fx-background-color: transparent;" text="Forgot Password?" textFill="#9ad0d3" underline="true">
+                     <font>
+                        <Font name="Georgia" size="20.0" />
+                     </font>
+                  </Button>
+                  <HBox alignment="TOP_CENTER" prefHeight="40.0" prefWidth="300.0">
+                     <children>
+                        <Label text="Not A Member Yet?" textFill="#9ad0d3">
+                           <font>
+                              <Font name="System Italic" size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="7.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Button fx:id="SignUp" mnemonicParsing="false" onMouseClicked="#signupBtn" prefHeight="31.0" prefWidth="76.0" style="-fx-background-color: transparent; -fx-background-radius: 5;" text="Sign Up" textFill="#9ad0d3" underline="true">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="2.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Label layoutX="153.0" layoutY="284.0" text="User login" textFill="#9ad0d3" AnchorPane.bottomAnchor="344.0">
+               <font>
+                  <Font name="Cambria" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="51.0" fitWidth="58.0" layoutX="171.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="370.0">
+         <image>
+            <Image url="@../icons/multiple-users-silhouette.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

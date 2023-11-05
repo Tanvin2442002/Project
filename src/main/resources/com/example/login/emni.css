@@ -1,0 +1,10 @@
+.back{
+    -fx-background-color: #c2cfd5;
+}
+.text-area {
+    text-area-background: #8d8d8d;
+}
+
+.text-area .content {
+    -fx-background-color: text-area-background ;
+}

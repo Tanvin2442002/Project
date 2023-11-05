@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.chart.StackedAreaChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.QuadCurve?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1530.0" style="-fx-background-color: #ECF4F5;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.login.DashboardController">
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+   <children>
+      <BorderPane layoutX="165.0" layoutY="96.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <AnchorPane fx:id="menubar" prefHeight="677.0" prefWidth="200.0" style="-fx-background-color: #404A4D; -fx-background-radius: 10;" BorderPane.alignment="CENTER">
+               <children>
+                  <QuadCurve controlX="34.06666564941406" controlY="121.19998168945312" endX="137.99998474121094" endY="-137.0" layoutX="62.0" layoutY="137.0" startX="-62.00000762939453" startY="-137.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </QuadCurve>
+                  <Circle fill="DODGERBLUE" layoutX="100.0" layoutY="54.0" radius="63.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+                  <Label fx:id="Menu" layoutX="55.0" layoutY="144.0" prefHeight="30.0" prefWidth="90.0" text="   MENU" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria Bold" size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="33.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../PIC/icons8-menu-50.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+                  <VBox layoutY="190.0" prefHeight="401.0" prefWidth="200.0" spacing="10.0" AnchorPane.bottomAnchor="199.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="190.0">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="1000.0" prefWidth="1000.0" style="-fx-border-width: 0 0 0 10; -fx-border-color: #86D3E3; -fx-border-radius: 0; -fx-background-color: #404A4D; -fx-scale-x: 1.06; -fx-scale-y: 1.06;" styleClass="sideitem" text="Dashboard" textFill="#e7f7fa" VBox.vgrow="ALWAYS">
+                           <font>
+                              <Font name="Cambria Bold" size="16.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="38.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../PIC/dashboard.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="study" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" onMouseClicked="#studyBtn" prefHeight="1000.0" prefWidth="1000.0" style="-fx-background-color: #404A4D;" styleClass="menu" stylesheets="@CSS/dash.css" text="   Study       " textFill="#e7f7fa">
+                           <font>
+                              <Font name="Cambria Bold" size="16.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="38.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../PIC/icons8-books-50.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="buttonRanking" mnemonicParsing="false" onMouseClicked="#ranking" prefHeight="1000.0" prefWidth="1000.0" style="-fx-background-color: #404A4D;" styleClass="menu" stylesheets="@CSS/dash.css" text="  Ranking  " textFill="#e7f7fa">
+                           <font>
+                              <Font name="Cambria Bold" size="16.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="38.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../PIC/ranking.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="1000.0" prefWidth="1000.0" style="-fx-background-color: #404A4D;" styleClass="menu" stylesheets="@CSS/dash.css" text="  Contests  " textFill="#e7f7fa">
+                           <font>
+                              <Font name="Cambria Bold" size="16.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="38.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../PIC/dashboard.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="OJbtn" mnemonicParsing="false" onMouseClicked="#latticeline" prefHeight="1000.0" prefWidth="1000.0" style="-fx-background-color: #404A4D;" styleClass="menu" stylesheets="@CSS/dash.css" text="LatticeLine" textAlignment="RIGHT" textFill="#e7f7fa" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="38.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../PIC/Judge.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="activities" mnemonicParsing="false" onMouseClicked="#activitiesBtn" prefHeight="1000.0" prefWidth="1000.0" style="-fx-background-color: #404A4D;" styleClass="menu" stylesheets="@CSS/dash.css" text="   Activities  " textFill="#e7f7fa">
+                           <font>
+                              <Font name="Cambria Bold" size="16.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="38.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../PIC/exam.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <Button layoutX="55.0" layoutY="12.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="91.0" style="-fx-background-color: transparent;">
+                     <graphic>
+                        <ImageView fitHeight="76.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../PIC/User.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label layoutX="30.0" layoutY="89.0" prefHeight="18.0" prefWidth="139.0" style="-fx-alignment: center;" text="Pallob" textFill="#e7f7fa">
+                     <font>
+                        <Font name="Segoe UI Semibold Italic" size="15.0" />
+                     </font></Label>
+                  <Button fx:id="logout" layoutX="25.0" layoutY="730.0" mnemonicParsing="false" onMouseClicked="#logoutBtn" prefHeight="51.0" prefWidth="138.0" style="-fx-background-radius: 10;" styleClass="logout" stylesheets="@CSS/dash.css" text="Log Out" textFill="#e7f7fa">
+                     <font>
+                        <Font name="Cambria Bold" size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../PIC/logout.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <AnchorPane prefHeight="690.0" prefWidth="690.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox layoutX="14.0" layoutY="47.0" prefHeight="188.0" prefWidth="1018.0" spacing="20.0">
+                     <children>
+                        <AnchorPane fx:id="pendingCourse" onMouseClicked="#pendingCourseBtn" prefHeight="150.0" prefWidth="150.0" style="-fx-background-radius: 10;" styleClass="pending_course" stylesheets="@CSS/dash.css">
+                           <children>
+                              <Label layoutX="11.0" layoutY="94.0" prefHeight="38.0" prefWidth="113.0" text="10000">
+                                 <font>
+                                    <Font name="Century Schoolbook Bold" size="30.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="9.0" layoutY="141.0" prefHeight="26.0" prefWidth="162.0" text="Pending Course">
+                                 <font>
+                                    <Font name="Century Gothic" size="20.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="56.0" fitWidth="63.0" layoutX="14.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../PIC/pending-tasks.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="completed" onMouseClicked="#completedBtn" prefHeight="180.0" prefWidth="180.0" style="-fx-background-radius: 10;" styleClass="completed" stylesheets="@CSS/dash.css">
+                           <children>
+                              <Label layoutX="26.0" layoutY="94.0" prefHeight="38.0" prefWidth="52.0" text="12">
+                                 <font>
+                                    <Font name="Century Schoolbook Bold" size="30.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="27.0" layoutY="143.0" prefHeight="26.0" prefWidth="145.0" text="Completed">
+                                 <font>
+                                    <Font name="Century Gothic" size="20.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="77.0" fitWidth="71.0" layoutX="17.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../PIC/graduate.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="watchtime" onMouseClicked="#watchtimeBtn" prefHeight="200.0" prefWidth="200.0" style="-fx-background-radius: 10;" styleClass="watch_time" stylesheets="@CSS/dash.css">
+                           <children>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="30.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="24.0" layoutY="144.0" prefHeight="26.0" prefWidth="145.0" text="Watch Time">
+                                 <font>
+                                    <Font name="Century Gothic" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="20.0" layoutY="94.0" prefHeight="38.0" prefWidth="69.0" text="12H">
+                                 <font>
+                                    <Font name="Century Schoolbook Bold" size="30.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="62.0" fitWidth="63.0" layoutX="21.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../PIC/video.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="certificate" onMouseClicked="#certificateBtn" prefHeight="200.0" prefWidth="200.0" style="-fx-background-radius: 10;" styleClass="certificate" stylesheets="@CSS/dash.css">
+                           <children>
+                              <Label layoutX="20.0" layoutY="146.0" prefHeight="26.0" prefWidth="161.0" text="Problem Solved" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Century Gothic" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="22.0" layoutY="99.0" prefHeight="38.0" prefWidth="52.0" text="12">
+                                 <font>
+                                    <Font name="Century Schoolbook Bold" size="30.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="79.0" fitWidth="70.0" layoutX="25.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../PIC/certificate.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="standing" onMouseClicked="#standingBtn" prefHeight="200.0" prefWidth="200.0" style="-fx-background-radius: 10;" styleClass="standing" stylesheets="@CSS/dash.css">
+                           <children>
+                              <Label layoutX="28.0" layoutY="145.0" prefHeight="26.0" prefWidth="145.0" text="Standings">
+                                 <font>
+                                    <Font name="Century Gothic" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="30.0" layoutY="94.0" prefHeight="38.0" prefWidth="52.0" text="#27">
+                                 <font>
+                                    <Font name="Century Schoolbook Bold" size="30.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="65.0" fitWidth="75.0" layoutX="27.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../PIC/standing.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+                  <Label fx:id="intro" layoutX="14.0" layoutY="12.0" text="Good Morning, Pallab!">
+                     <font>
+                        <Font name="Georgia Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <HBox layoutX="14.0" layoutY="249.0" prefHeight="416.0" prefWidth="1026.0">
+                     <children>
+                        <StackedAreaChart fx:id="area" alternativeRowFillVisible="false" horizontalGridLinesVisible="false" horizontalZeroLineVisible="false" prefHeight="416.0" prefWidth="1068.0" verticalGridLinesVisible="false" verticalZeroLineVisible="false">
+                          <xAxis>
+                            <NumberAxis label="Days" side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis label="Hours" side="LEFT" />
+                          </yAxis>
+                        </StackedAreaChart>
+                     </children>
+                  </HBox>
+                  <AnchorPane layoutX="16.0" layoutY="681.0" prefHeight="94.0" prefWidth="1026.0" style="-fx-background-color: #D3E1E4; -fx-background-radius: 10;">
+                     <children>
+                        <Label layoutX="55.0" layoutY="42.0" prefHeight="26.0" prefWidth="135.0" text="Graph Theory">
+                           <font>
+                              <Font name="Century" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="303.0" layoutY="44.0" prefHeight="20.0" prefWidth="154.0" text="Tariq Hasan Rizu">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="540.0" layoutY="47.0" prefHeight="20.0" prefWidth="86.0" text="15hr 30mins">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <ProgressBar fx:id="prog" layoutX="760.0" layoutY="50.0" prefWidth="200.0" progress="0.7" />
+                        <Label layoutX="762.0" layoutY="9.0" prefHeight="18.0" prefWidth="198.0" text="Progress">
+                           <font>
+                              <Font name="Californian FB" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="922.0" layoutY="14.0" text="70%">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="36.0" fitWidth="30.0" layoutX="293.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../PIC/skill.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="33.0" fitWidth="29.0" layoutX="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../PIC/books.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="325.0" layoutY="4.0" text="Mentor">
+                           <font>
+                              <Font name="Californian FB Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="48.0" layoutY="3.0" text="Current Course">
+                           <font>
+                              <Font name="Californian FB Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="543.0" layoutY="5.0" text="Duration">
+                           <font>
+                              <Font name="Californian FB Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children></AnchorPane>
+         </center>
+         <right>
+            <AnchorPane prefHeight="690.0" prefWidth="270.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="24.0" layoutY="63.0" prefHeight="18.0" prefWidth="116.0" text="Progress">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="21.0" layoutY="100.0" prefHeight="282.0" prefWidth="254.0" style="-fx-background-color: white; -fx-border-radius: 25;">
+                     <children>
+                        <PieChart fx:id="pie" layoutX="-2.0" layoutY="-2.0" prefHeight="286.0" prefWidth="257.0" style="-fx-background-color: #D3E1E4;" />
+                     </children>
+                  </AnchorPane>
+                  <VBox layoutX="22.0" layoutY="432.0" prefHeight="348.0" prefWidth="253.0" style="-fx-background-color: #D3E1E4;">
+                     <children>
+                        <Label text="Upcoming Contests">
+                           <font>
+                              <Font size="21.0" />
+                           </font>
+                        </Label>
+                        <Label text="Label" />
+                        <Label text="Label" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

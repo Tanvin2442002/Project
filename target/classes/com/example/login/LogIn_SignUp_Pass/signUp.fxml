@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.QuadCurve?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="600.0" maxWidth="900.0" minHeight="600.0" minWidth="900.0" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.login.LogIn_SignUp_Pass.signupController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e9deffa6" height="606.0" stroke="TRANSPARENT" strokeType="INSIDE" width="900.0" />
+      <QuadCurve controlX="519.4000244140625" controlY="56.79998779296875" endX="267.0" endY="398.0" layoutX="479.0" layoutY="208.0" startX="266.2000732421875" startY="-208.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.7058823704719543" green="0.6235294342041016" blue="0.9803921580314636" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7058823704719543" green="0.6235294342041016" blue="0.9803921580314636" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </QuadCurve>
+      <AnchorPane prefHeight="600.0" prefWidth="727.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="606.0" layoutX="-5.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="752.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="0.4280302741310813" startX="0.6553029946305535" startY="0.4356060299006375">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5568627715110779" green="0.4313725531101227" blue="0.9372549057006836" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.7058823704719543" green="0.6235294342041016" blue="0.9803921580314636" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#454457e5" height="527.0" layoutX="507.0" layoutY="55.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="366.0" />
+      <Label layoutX="535.0" layoutY="68.0" prefHeight="24.0" prefWidth="82.0" text="Full Name" textAlignment="CENTER" textFill="#aafcff">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fullName" layoutX="534.0" layoutY="95.0" prefHeight="31.0" prefWidth="314.0" promptText="Full name" style="-fx-background-color: #e9deff; -fx-background-radius: 5;">
+         <font>
+            <Font name="Cambria" size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="538.0" layoutY="130.0" text="Student Id" textAlignment="CENTER" textFill="#aafcff">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="stdID" layoutX="535.0" layoutY="152.0" prefHeight="31.0" prefWidth="314.0" promptText="Student Id" style="-fx-background-color: #e9deff; -fx-background-radius: 5;">
+         <font>
+            <Font name="Cambria" size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="538.0" layoutY="187.0" text="Username" textAlignment="CENTER" textFill="#aafcff">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="username" layoutX="535.0" layoutY="211.0" prefHeight="31.0" prefWidth="314.0" promptText="Username" style="-fx-background-color: #e9deff; -fx-background-radius: 5;">
+         <font>
+            <Font name="Cambria" size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="540.0" layoutY="247.0" text="Email" textAlignment="CENTER" textFill="#aafcff">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Email" layoutX="535.0" layoutY="270.0" prefHeight="31.0" prefWidth="314.0" promptText="Email" style="-fx-background-color: #e9deff; -fx-background-radius: 5;">
+         <font>
+            <Font name="Cambria" size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="538.0" layoutY="305.0" text="Department" textAlignment="CENTER" textFill="#aafcff">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="UserDeparment" layoutX="535.0" layoutY="331.0" prefHeight="31.0" prefWidth="314.0" style="-fx-background-color: #e9deff; -fx-background-radius: 5;" />
+      <Label layoutX="540.0" layoutY="366.0" text="Password" textAlignment="CENTER" textFill="#aafcff">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="password" layoutX="537.0" layoutY="390.0" prefHeight="31.0" prefWidth="314.0" promptText="Password" style="-fx-background-color: #e9deff; -fx-background-radius: 5;">
+         <font>
+            <Font name="Cambria" size="15.0" />
+         </font>
+      </PasswordField>
+      <Label layoutX="540.0" layoutY="427.0" text="Re-type Password" textAlignment="CENTER" textFill="#aafcff">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="retypePassword" layoutX="537.0" layoutY="453.0" prefHeight="31.0" prefWidth="314.0" promptText="Re-type Password" style="-fx-background-color: #e9deff; -fx-background-radius: 5;">
+         <font>
+            <Font name="Cambria" size="15.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="signUp" layoutX="655.0" layoutY="500.0" mnemonicParsing="false" onMouseClicked="#signUpBtn" style="-fx-background-color: #8D6AED;" text="Sign Up" textFill="WHITE">
+         <font>
+            <Font name="Candara Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="597.0" layoutY="540.0" text="Already a member?" textAlignment="CENTER" textFill="#aafcff">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="login" layoutX="733.0" layoutY="532.0" mnemonicParsing="false" onMouseClicked="#loginBtn" prefHeight="34.0" prefWidth="62.0" style="-fx-background-color: #45445700;" text="Log In" textFill="#aafcff" underline="true">
+         <font>
+            <Font name="Calibri Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="65.0" layoutY="543.0" text="JOIN THE LEGACY" textFill="#e9deff">
+         <font>
+            <Font name="Stencil" size="44.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="404.0" fitWidth="481.0" layoutX="1.0" layoutY="-1.0">
+         <image>
+            <Image url="@../icons/JOIN THE LEGACY.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="158.0" fitWidth="200.0" layoutX="153.0" layoutY="383.0">
+         <image>
+            <Image url="@../icons/MCC back.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="639.0" layoutY="15.0" prefHeight="38.0" prefWidth="107.0" text="Sign Up" textFill="#f0feff">
+         <font>
+            <Font name="Cambria Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="passnotmatch" layoutX="537.0" layoutY="453.0" onMouseClicked="#cngfeild" prefHeight="31.0" prefWidth="314.0" style="-fx-alignment: left; -fx-background-color: #e9deff; -fx-background-radius: 5;" textAlignment="CENTER">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
